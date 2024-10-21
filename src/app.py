@@ -3,6 +3,9 @@ from src.constants import DOGS_API_BASE_URL, YANDEX_BASE_URL, YANDEX_TOKEN
 
 
 class DogsPicturesUploader:
+    """
+    Само тестируемое приложение.
+    """
     def __init__(self):
         self.dogs_client = DogsApi(base_url=DOGS_API_BASE_URL)
         self.yandex_client = YaUploader(base_url=YANDEX_BASE_URL, token=YANDEX_TOKEN)
